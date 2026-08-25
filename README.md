@@ -11,7 +11,11 @@
 <p align="center">
 A content-based movie recommender that suggests the top 5 most similar movies to any title you pick — powered by TMDB metadata, NLP feature engineering, and cosine similarity.
 </p>
-
+<p align="center">
+  <a href="https://darshilsavaliya-mrs-movie-recommendation-system.streamlit.app" target="_blank">
+    <img src="https://img.shields.io/badge/🚀_View_Live_App-Click_Here-success?style=for-the-badge" />
+  </a>
+</p>
 ---
 
 ## 📌 Table of Contents
@@ -24,8 +28,6 @@ A content-based movie recommender that suggests the top 5 most similar movies to
 - [Project Structure](#-project-structure)
 - [Installation](#-installation)
 - [Usage](#-usage)
-- [Limitations](#-limitations)
-- [Future Improvements](#-future-improvements)
 
 ---
 
@@ -147,27 +149,6 @@ streamlit run app.py
 2. Select a movie from the dropdown.
 3. Click **Recommend**.
 4. View the top 5 similar movies with posters.
-
----
-
-## ⚠️ Limitations
-
-- Content-based only — not personalized to individual user behavior/ratings.
-- Recommendations depend solely on metadata quality (overview, genres, keywords, cast, director).
-- The selected movie must exist in the processed dataset.
-- Poster retrieval requires internet access and a valid TMDB API key.
-- The TMDB API key is currently hard-coded in `app.py` — move it to Streamlit secrets or an environment variable before deploying.
-- Recommendation quality is bounded by the original TMDB metadata and the chosen vectorization method (`CountVectorizer` vs. TF-IDF).
-
----
-
-## 🔮 Future Improvements
-
-- [ ] Move TMDB API key to `.env` / Streamlit secrets.
-- [ ] Switch to TF-IDF or embeddings (e.g., Sentence-BERT) for richer similarity.
-- [ ] Add collaborative filtering using user ratings for hybrid recommendations.
-- [ ] Cache TMDB API responses to reduce latency and API calls.
-- [ ] Deploy on Streamlit Community Cloud / Docker.
 
 ---
 
