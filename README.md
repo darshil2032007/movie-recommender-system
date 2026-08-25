@@ -39,7 +39,8 @@ The system analyzes movie **overview, genres, keywords, cast, and director** met
 
 ## 🎥 Demo
 
-![alt text](image.png)
+<img width="1732" height="907" alt="Screenshot 2026-08-25 120348" src="https://github.com/user-attachments/assets/6f69edc2-e5ce-45d9-b56d-60252fe535a7" />
+
 
 
 ---
